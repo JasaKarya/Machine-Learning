@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: #00A9FF;
+    width: 100%;
+    height: 70px;
+    color : white;
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.menu {
+    margin-left: 800px;
+    padding-top: 30px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color : white;
+}
+
+.menu ul li a:hover {
+    color: lightskyblue;
+    font-style: italic;
+}
+
+.banner {
+    background-color: #89CFF3;
+    height: 550px;
+    text-align: center;
+    color: black solid;
+}
+
+.banner img {
+    border-radius: 50px;
+    height: 150px;
+    border: 6px solid white;
+    margin-top: 160px;
+}
+
+.banner h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    margin-top: 40px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+    color: black solid;
+    font-size: large;
+}
+
+.banner button:hover {
+    background-color: #00A9FF;
+    border: 1px solid white;
+    color: white;
+}
+
+.banner p {
+    color: black solid;
+    font-size: larger;
+}
+
+.banner p span:before {
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color : black;
+    font-size : 20px;
+}
+
+@keyframes gerak {
+    0% {
+        content : 'Mathematics Education Student';
+    }
+    50% {
+        content: 'Data Enthusiast';
+    }
+    100% {
+        content: 'Machine Learning Engineer';
+    }
+}
+
+.summary {
+    text-align: center;
+    color: rgb(83, 83, 83);
+    margin-top: 30px;
+    align-content: center;
+    line-height: 1.5;
+}
+
+.summary summary p {
+    text-align: justify;
+    color: black;
+    margin-top: 30px;
+}
+
+.box-sum {
+    border-radius: 50%;
+    border: 1% solid #89CFF3;
+}
+
+.box-sum p {
+    color: black;
+    text-align: justify;
+    margin-top: 2px;
+    padding: 2%;
+    font-size: 20px;
+}
+
+.box-edu {
+    text-align: center;
+    color: rgb(83, 83, 83);
+    margin-top: 30px;
+    align-content: center;
+    line-height: 1.5;
+}
+
+.box-edu summary p {
+    text-align: justify;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Menggunakan CSS Flex untuk mengatur lebar kotak secara otomatis */
+/* Gaya untuk container yang mengelompokkan kotak */
+.box-education-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap; /* Tidak boleh wrap ke baris berikutnya */
+    overflow: hidden; /* Menghilangkan scroll horizontal jika terjadi overflow */
+    max-width: 100%; /* Memastikan container tidak melebihi lebar layar */
+  }
+  
+  .box-education-kiri, 
+  .box-education-tengah, 
+  .box-education-kanan {
+      flex: 1;
+      max-width: calc(33.33% - 40px);
+      background-color: #f0f0f0;
+      text-align: center;
+      margin: 20px; /* Mengurangi margin untuk memberikan lebih banyak ruang */
+      border: 10px;
+  }
+  
+  /* Gaya untuk gambar di dalam kotak */
+  .box-education-kiri img,
+  .box-education-tengah img,
+  .box-education-kanan img {
+    width: 40%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+/* Gaya untuk judul dan teks dalam kotak */
+.box-education-kiri h3,
+.box-education-tengah h3,
+.box-education-kanan h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.box-education-kiri h4,
+.box-education-tengah h4,
+.box-education-kanan h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.box-education-kiri h5,
+.box-education-tengah h5,
+.box-education-kanan h5 {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Gaya untuk daftar dalam kotak */
+.box-education-kiri ul,
+.box-education-tengah ul,
+.box-education-kanan ul {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.box-education-kiri li,
+.box-education-tengah li,
+.box-education-kanan li {
+    font-size: 13px;
+    margin: 5px 0;
+    line-height: 2;
+}
+/* Gaya untuk container yang mengelompokkan kotak */
+.box-skill-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap; /* Tidak boleh wrap ke baris berikutnya */
+    overflow: hidden; /* Menghilangkan scroll horizontal jika terjadi overflow */
+    max-width: 100%; /* Memastikan container tidak melebihi lebar layar */
+}
+
+/* Gaya untuk judul utama frame */
+.skill h1 {
+    text-align: center; /* Mengatur teks ke tengah secara horizontal */
+}
+/* Gaya untuk box skill (kiri dan kanan) */
+
+.box-skill {
+    flex: 1;
+    max-width: calc(50% - 40px); /* Setengah dari lebar container */
+    background-color: rgb(170, 215, 243); /* Warna background */
+    text-align: center;
+    margin: 20px; /* Mengurangi margin untuk memberikan lebih banyak ruang */
+    border: 10px;
+}
+
+/* Gaya untuk judul dan teks dalam kotak */
+.box-skill h1,
+.box-skill h3 {
+    font-size: 18px solid;
+    margin: 0;
+    color: black; /* Warna teks putih */
+}
+
+/* Gaya untuk daftar dalam kotak */
+.box-skill ul {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.box-skill li {
+    font-size: 15px;
+    margin: 5px 0;
+    line-height: 2;
+    color: black; /* Warna teks putih */
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    font-size: 30px;
+    margin: 1rem;
+}
+
+.social a .bx {
+    padding: 5px;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.social a .bx:hover {
+    background: var(--second-color);
+}
+
+.links {
+    margin: 1rem 0 1rem;
+}
+
+.links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--third-color);
+    padding: 1rem;
+}
+
+.links a:hover {
+    color: var(--second-color);
+}
+
+.contacts p {
+    text-align: center;
+}
+
+
